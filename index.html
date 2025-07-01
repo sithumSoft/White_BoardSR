@@ -6,11 +6,19 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <svg id="art-shapes" width="100vw" height="100vh" xmlns="http://www.w3.org/2000/svg">
+    <ellipse cx="15%" cy="20%" rx="120" ry="60" fill="#a8edea" opacity="0.18"/>
+    <ellipse cx="80%" cy="80%" rx="100" ry="50" fill="#fcb69f" opacity="0.13"/>
+    <ellipse cx="60%" cy="30%" rx="80" ry="40" fill="#fed6e3" opacity="0.12"/>
+    <ellipse cx="30%" cy="70%" rx="90" ry="45" fill="#ffecd2" opacity="0.10"/>
+  </svg>
   <h1>Simple Whiteboard</h1>
   <canvas id="whiteboard" width="800" height="500"></canvas>
   <div class="controls">
     <label>Color: <input type="color" id="colorPicker" value="#000000"></label>
     <label>Size: <input type="range" id="sizePicker" min="1" max="20" value="3"></label>
+    <button id="brushBtn">Brush</button>
+    <button id="bucketBtn">Paint Bucket</button>
     <button id="eraserBtn">Eraser</button>
     <button id="undoBtn">Undo</button>
     <button id="downloadBtn">Download</button>
